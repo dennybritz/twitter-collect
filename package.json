@@ -1,0 +1,17 @@
+{
+  "name": "twitter-harvest",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Harvest article metdata from Twitter",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Denny Britz",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.13",
+    "dotenv": "^0.5.1",
+    "underscore": "^1.8.2"
+  }
+}

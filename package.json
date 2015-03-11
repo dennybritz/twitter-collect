@@ -13,6 +13,7 @@
   "dependencies": {
     "blikk-logjs": "git://github.com/blikkhq/logjs.git",
     "blikk-slack-notifier-js": "git://github.com/blikkhq/slack-notifier-js.git",
+    "bloomfilter": "git://github.com/jasondavies/bloomfilter.js",
     "bluebird": "^2.9.13",
     "dotenv": "^0.5.1",
     "embedly": "^1.0.4",

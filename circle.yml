@@ -9,7 +9,7 @@ dependencies:
   pre:
     - docker login -e $DOCKER_EMAIL  -u $DOCKER_USER -p $DOCKER_PASSWORD
     - docker build -t blikk/twitter-collect .
-    - docker tag blikk/twitter-collect:lastest blikk/twitter-collect:$CIRCLE_SHA1
+    - docker tag blikk/twitter-collect:latest blikk/twitter-collect:$CIRCLE_SHA1
 
 deployment:
   hub:

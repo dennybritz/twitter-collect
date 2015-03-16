@@ -5,8 +5,7 @@
   "description": "Harvest article metdata from Twitter",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "mocha"
+    "start": "node app.js"
   },
   "author": "Denny Britz",
   "license": "ISC",

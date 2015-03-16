@@ -1,0 +1,17 @@
+machine:
+  services:
+    - docker
+  environment:
+    DOCKER_EMAIL: deploy@blikk.co
+    DOCKER_USER: blikkdeploy
+
+dependencies:
+  pre:
+    - docker login -e $DOCKER_EMAIL  -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - docker build -t blikk/twitter-collect:latest .
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker push blikk/twitter-collect:latest

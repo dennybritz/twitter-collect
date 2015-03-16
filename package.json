@@ -16,7 +16,6 @@
     "bloomfilter": "git://github.com/jasondavies/bloomfilter.js",
     "bluebird": "^2.9.13",
     "dotenv": "^0.5.1",
-    "embedly": "^1.0.4",
     "twitter": "^1.2.3",
     "underscore": "^1.8.2"
   }

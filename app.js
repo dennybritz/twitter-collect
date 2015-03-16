@@ -2,7 +2,6 @@
 
 require('dotenv').load();
 var twitterClient = require('./lib/twitter');
-var embedly = require('./lib/embedly');
 var log = require('blikk-logjs')();
 
 if(!process.env.TWITTER_TRACK){

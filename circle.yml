@@ -8,10 +8,11 @@ machine:
 dependencies:
   pre:
     - docker login -e $DOCKER_EMAIL  -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - docker build -t blikk/twitter-collect:latest .
+    - docker build -t blikk/twitter-collect .
+    - docker tag blikk/twitter-collect:lastest blikk/twitter-collect:$CIRCLE_SHA1
 
 deployment:
   hub:
     branch: master
     commands:
-      - docker push blikk/twitter-collect:latest
+      - docker push blikk/twitter-collect

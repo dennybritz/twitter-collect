@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "blikk-logjs": "git://github.com/blikkhq/logjs.git",
-    "blikk-slack-notifier-js": "git://github.com/blikkhq/slack-notifier-js.git",
+    "confluent-kafka-client": "git://github.com/blikkhq/confluent-kafka-client-js",
     "bloomfilter": "git://github.com/jasondavies/bloomfilter.js",
     "bluebird": "^2.9.13",
     "dotenv": "^0.5.1",

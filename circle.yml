@@ -4,6 +4,7 @@ machine:
   environment:
     DOCKER_EMAIL: deploy@blikk.co
     DOCKER_USER: blikkdeploy
+    LOG_NAME: twitter-collect
     VERSION: 0.2.0
 
 test:

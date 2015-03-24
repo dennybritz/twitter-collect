@@ -4,12 +4,14 @@ machine:
   environment:
     DOCKER_EMAIL: deploy@blikk.co
     DOCKER_USER: blikkdeploy
+    VERSION: 0.2.0
 
-dependencies:
-  pre:
+test:
+  post:
     - docker login -e $DOCKER_EMAIL  -u $DOCKER_USER -p $DOCKER_PASSWORD
     - docker build -t blikk/twitter-collect .
     - docker tag blikk/twitter-collect:latest blikk/twitter-collect:$CIRCLE_SHA1
+    - docker tag blikk/twitter-collect:latest blikk/twitter-collect:$VERSION
 
 deployment:
   hub:

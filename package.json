@@ -1,7 +1,7 @@
 {
   "name": "twitter-collect",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Harvest article metdata from Twitter",
   "main": "app.js",
   "scripts": {
@@ -11,12 +11,17 @@
   "author": "Denny Britz",
   "license": "ISC",
   "dependencies": {
-    "blikk-logjs": "git://github.com/blikkhq/logjs.git",
-    "confluent-kafka-client": "git://github.com/blikkhq/confluent-kafka-client-js",
+    "blikk-logjs": "^0.1.2",
     "bloomfilter": "git://github.com/jasondavies/bloomfilter.js",
     "bluebird": "^2.9.13",
+    "confluent-client": "^0.1.0",
     "dotenv": "^0.5.1",
+    "superagent": "^1.1.0",
     "twitter": "^1.2.3",
     "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "nock": "^1.2.1"
   }
 }

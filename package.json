@@ -1,12 +1,12 @@
 {
   "name": "twitter-collect",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Harvest article metdata from Twitter",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha"
+    "test": "LOG_NAME=twitter-collect-test mocha"
   },
   "author": "Denny Britz",
   "license": "ISC",

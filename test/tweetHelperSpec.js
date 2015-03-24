@@ -9,8 +9,14 @@ describe('tweetHelper', function(){
   describe('#normalizeUrl', function(){
 
     it('should work', function(){
-      expect(tweetHelper.normalizeUrl('http://www.google.com/abc##aaa')).to.eql('http://www.google.com/abc');
-      expect(tweetHelper.normalizeUrl('http://www.google.com/abc?q=4&s=3')).to.eql('http://www.google.com/abc');
+      expect(tweetHelper.normalizeUrl('http://www.google.com/abc/33/1/3/4'))
+        .to.eql('http://www.google.com/abc/33/1/3/4');
+      expect(tweetHelper.normalizeUrl('http://www.google.com/abc##aaa'))
+        .to.eql('http://www.google.com/abc');
+      expect(tweetHelper.normalizeUrl('http://www.google.com/abc?q=4&s=3'))
+        .to.eql('http://www.google.com/abc?q=4&s=3');
+      expect(tweetHelper.normalizeUrl('http://www.google.com/abc?utm_source=aaa&utm_campaign=bbbb'))
+        .to.eql('http://www.google.com/abc');        
     });
 
   });
